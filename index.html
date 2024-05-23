@@ -4,74 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
+  <title>Formulaire Bancaire</title>
 </head>
 <body>
   <header>
     <h1>Formulaire Bancaire</h1>
   </header>
-  <main>
-    <form class="form-bancaire">
-      <div class="label">
-        <label for="nom">Nom :</label>
-      </div>
-      <div class="input">
-        <input type="text" id="nom" name="nom">
-      </div>
-      <div class="error">
-        <p class="error-nom"></p>
-      </div>
-      <div class="label">
-        <label for="prenom">Prénom :</label>
-      </div>
-      <div class="input">
-        <input type="text" id="prenom" name="prenom">
-      </div>
-      <div class="error">
-        <p class="error-prenom"></p>
-      </div>
-      <div class="label">
-        <label for="date">Date de naissance :</label>
-      </div>
-      <div class="input">
-        <input type="text" id="date" name="date">
-      </div>
-      <div class="error">
-        <p class="error-date"></p>
-      </div>
-      <div class="label">
-        <label for="email">Email :</label>
-      </div>
-      <div class="input">
-        <input type="email" id="email" name="email">
-      </div>
-      <div class="error">
-        <p class="error-email"></p>
-      </div>
-      <div class="label">
-        <label for="code">Code Confidentiel :</label>
-      </div>
-      <div class="input">
-        <input type="text" id="code" name="code">
-      </div>
-      <div class="error">
-        <p class="error-code"></p>
-      </div>
-      <div class="btn-submit">
-        <button type="submit">Envoyer</button>
-      </div>
-      <div class="btn-reset">
-        <button type="reset">Annuler</button>
-      </div>
-      <div class="error">
-        <p class="error-btn"></p>
-      </div>
-    </form>
-      
-      
+  <form class="form-bancaire" id="form-bancaire">
+    <div class="label">
+      <label for="nom">Nom :</label>
+    </div>
+    <div class="input">
+      <input type="text" id="nom" name="nom">
+    </div>
+    <div class="error">
+      <p class="error-nom error-message"></p>
+    </div>
+    <div class="label">
+      <label for="prenom">Prénom :</label>
+    </div>
+    <div class="input">
+      <input type="text" id="prenom" name="prenom">
+    </div>
+    <div class="error">
+      <p class="error-prenom error-message"></p>
+    </div>
+    <div class="label">
+      <label for="date">Date de naissance :</label>
+    </div>
+    <div class="input">
+      <input type="text" id="date" name="date" placeholder="jj/mm/aaaa">
+    </div>
+    <div class="error">
+      <p class="error-date error-message"></p>
+    </div>
+    <div class="label">
+      <label for="email">Email :</label>
+    </div>
+    <div class="input">
+      <input type="email" id="email" name="email">
+    </div>
+    <div class="error">
+      <p class="error-email error-message"></p>
+    </div>
+    <div class="label">
+      <label for="code">Code Confidentiel :</label>
+    </div>
+    <div class="input">
+      <input type="text" id="code" name="code" placeholder="FR12345ABCx">
+    </div>
+    <div class="error">
+      <p class="error-code error-message"></p>
+    </div>
+    <div class="btn-submit">
+      <button type="submit">Envoyer</button>
+    </div>
+    <div class="btn-reset">
+      <button type="reset">Annuler</button>
+    </div>
+    <div class="error">
+      <p class="error-btn error-message"></p>
+    </div>
+  </form>
 
-
-      
+   <!-- La fenêtre modale -->
+   <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1 class="modal-h1">Formulaire bancaire</h1>
+      <p>Vos données sont valides, elles vont être tranmises sur nos serveurs pour traitement.</p>
+      <p>Nous sommes ravis de vous compteer parmi nos nouveaux clients</p>
+      <button id="close-submit">Fermer</button>
+    </div>
+  </div>
   
   <script src="./js/script.js"></script>
 </body>
