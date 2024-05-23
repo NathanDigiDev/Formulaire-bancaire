@@ -1,0 +1,72 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #056a16;
+  --background-color: #918c88e4;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url(../img/fond.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 10px 0;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.form-bancaire {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 20px auto 0;
+  border: 1px solid rgba(0, 0, 0, 0.89);
+}
+
+.label, .input, .btn-submit, .btn-reset,.error {
+  background-color: var(--background-color);
+  height: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.89);
+}
+
+.label {
+  color: var(--primary-color);
+  padding: 10px;
+  font-weight: bold;
+}
+
+.input {
+  text-align: center;
+  padding: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.btn-submit, .btn-reset {
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-submit button, .btn-reset button {
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
